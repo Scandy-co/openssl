@@ -407,7 +407,7 @@ static int read_till_nl(FILE *in)
     return 1;
 }
 
-static volatile sig_atomic_t intr_signal;
+static volatile intr_signal;
 #endif
 
 static int read_string_inner(UI *ui, UI_STRING *uis, int echo, int strip_nl)
